@@ -1,12 +1,20 @@
-<div>
+<div class="blog-card">
+  <div class="blog-card-header">
+    <!-- Below we are rendering the name of one dish using a Handlebars.js expression -->
+    {{blog_title}}
+    {{blog_description}}
+  </div>
+</div>
+
+{{!-- <div>
   {{#each blogs}}
-<div class="title-div">
-  <h1>{{title}}</h1>
+<div class="blog-title-div">
+  <h1>{{blog_title}}</h1>
 </div>
 <br>
 <br>
-<div class="description-div">
-  <h2>{{description}}</h2>
+<div class="blog-description-div">
+  <h2>{{blog_description}}</h2>
 </div>
   {{/each}}
-</div>
+</div> --}}
