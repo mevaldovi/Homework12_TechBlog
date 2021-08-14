@@ -24,6 +24,20 @@ router.get('/blog/:num', async(req, res) => {
     return res.render('blog', existingBlogPosts[req.params.num - 1]);
 });
 
+//get ONe blog post with serialized data
+router.get('/blog', async(req, res) => {
+    try {
+        // Search the database for a blog with an id that matches params
+        const dishData = await Dish.findByPk(req.params.id);
+        console.log(dishData)
+            // We use .get({ plain: true }) on the object to serialize it so that it only includes the data that we need. 
+        const dish = dishData.get({ plain: true });
+        // Then, the 'dish' template is rendered and dish is passed into the template.
+        res.render('dish', dish);
+    } catch (err) {
+        res.status(500).json(err); //IMPORTANT: CHANGE ALL "DISH/DISHDATA" VARS TO "BLOG/BLOGDATA"
+    }
+});
 module.exports = router;
 
 
