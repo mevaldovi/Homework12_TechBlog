@@ -14,7 +14,7 @@ const hbs = exphbs.create({});
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-const sess = {
+const sess = { //create a new session Object variable
     secret: 'Super secret secret',
     cookie: {},
     resave: false,
@@ -24,13 +24,13 @@ const sess = {
     })
 };
 
-app.use(session(sess));
+app.use(session(sess)); //tells express to use session
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true })); //parse the urlencoded data with querystring library
 
-app.use(routes);
+app.use(routes); //use the routes
 
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: false }).then(() => { //tells sequelize to become sunchronous and to NOT delete existing tables
     app.listen(PORT, () => console.log('Now listening'));
 });
