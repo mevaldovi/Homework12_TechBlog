@@ -14,37 +14,50 @@ const existingBlogPosts = [{
     }
 ];
 
-router.post('/', async(req, res) => {
-    try {
-        const newProject = await Project.create({
-            ...req.body,
-            user_id: req.session.user_id,
-        });
-
-        res.status(200).json(newProject);
-    } catch (err) {
-        res.status(400).json(err);
-    }
+router.get('/', async(req, res) => {
+    res.render('homepage');
 });
 
-router.delete('/:id', async(req, res) => {
-    try {
-        const projectData = await Project.destroy({
-            where: {
-                id: req.params.id,
-                user_id: req.session.user_id,
-            },
-        });
-
-        if (!projectData) {
-            res.status(404).json({ message: 'No project found with this id!' });
-            return;
-        }
-
-        res.status(200).json(projectData);
-    } catch (err) {
-        res.status(500).json(err);
-    }
+//get one dish
+router.get('/blog/:num', async(req, res) => {
+    // This method renders the 'dish' template, and uses params to select the correct dish to render in the template, based on the id of the dish.
+    return res.render('blog', blog[req.params.num - 1]);
 });
 
 module.exports = router;
+
+
+// router.post('/', async(req, res) => {
+//     try {
+//         const newProject = await Project.create({
+//             ...req.body,
+//             user_id: req.session.user_id,
+//         });
+
+//         res.status(200).json(newProject);
+//     } catch (err) {
+//         res.status(400).json(err);
+//     }
+// });
+
+// router.delete('/:id', async(req, res) => {
+//     try {
+//         const projectData = await Project.destroy({
+//             where: {
+//                 id: req.params.id,
+//                 user_id: req.session.user_id,
+//             },
+//         });
+
+//         if (!projectData) {
+//             res.status(404).json({ message: 'No project found with this id!' });
+//             return;
+//         }
+
+//         res.status(200).json(projectData);
+//     } catch (err) {
+//         res.status(500).json(err);
+//     }
+// });
+
+// module.exports = router;
