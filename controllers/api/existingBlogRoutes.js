@@ -1,16 +1,16 @@
 const router = require('express').Router();
 // const { Project } = require('../../models');
 const existingBlogPosts = [{
-        "title": "HTML Fundamentals",
-        "description": "HTML stands for HyperText Markup Language and is used to structure a web page and its content"
+        title: "HTML Fundamentals",
+        description: "HTML stands for HyperText Markup Language and is used to structure a web page and its content"
     },
     {
-        "title": "ON MVCs",
-        "description": "stands for Model, View, Controller. Refers to the architecture running within a server to process and render data."
+        title: "ON MVCs",
+        description: "stands for Model, View, Controller. Refers to the architecture running within a server to process and render data."
     },
     {
-        "title": "What is V8?!?",
-        "description": "V8 refers to the open-spurce javascript engine developed for Chrome."
+        title: "What is V8?!?",
+        description: "V8 refers to the open-spurce javascript engine developed for Chrome."
     }
 ];
 
