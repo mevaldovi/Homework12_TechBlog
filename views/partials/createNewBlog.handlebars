@@ -1,6 +1,6 @@
 {{!-- IF user clicks the "create" button, create a div with a title and a description for user to enter --}}
 {{!-- {{#if button is clicked}} --}}
-{{#if}}
+{{#if loggedIn}}
 <div class="blog-card">
   <div class="blog-card-header">
     <!-- Below we are rendering the name of one dish using a Handlebars.js expression -->
@@ -8,4 +8,6 @@
   </div>
   {{blog_description}}
 </div>
+{{else}}
+<a href="/login">You must login first to view this painting</a>
 {{/if}}

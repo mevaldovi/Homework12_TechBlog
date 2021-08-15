@@ -1,4 +1,5 @@
 <!-- For the homepage, the blog partial is used to render the existing blog data -->
+{{#if loggedIn}}
 <div>
   {{#each posts as |post|}}
 <div class="title-div">
@@ -11,4 +12,6 @@
 </div>
   {{/each}}
 </div>
-
+{{else}}
+<a href="/login">You must log in first to view blogs!</a>
+{{/if}}

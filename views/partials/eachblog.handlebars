@@ -1,20 +1,15 @@
-<div class="blog-card">
-  <div class="blog-card-header">
-    <!-- Below we are rendering the name of one dish using a Handlebars.js expression -->
-    {{blog_title}}
+
+<!-- If the user is logged in, render the painting content -->
+{{#if loggedIn}}
+<section class="painting">
+  <img src="/images/{{painting.filename}}" alt="{{painting.description}}">
+  <div class="painting-details">
+    <h3>{{painting.title}}</h3>
+    <p>By: {{painting.artist}}</p>
+    <p>Exhibition open until: {{ format_date painting.exhibition_date}}</p>
   </div>
-  {{blog_description}}
-</div>
-<div>
-  {{!-- loop through each of the blogs and display the individual blog --}}
-  {{#each blogs}}
-<div class="blog-title-div">
-  <h1>{{blog_title}}</h1>
-</div>
-<br>
-<br>
-<div class="blog-description-div">
-  <h2>{{blog_description}}</h2>
-</div>
-  {{/each}}
-</div>
+</section>
+<!-- Otherwise, provide a link to login -->
+{{else}}
+<a href="/login">You must login first to view this painting</a>
+{{/if}}
