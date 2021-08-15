@@ -1,5 +1,6 @@
+<!-- For the homepage, the blog partial is used to render the existing blog data -->
 <div>
-  {{#each posts}}
+  {{#each posts as |post|}}
 <div class="title-div">
   <h1>{{title}}</h1>
 </div>
@@ -10,3 +11,4 @@
 </div>
   {{/each}}
 </div>
+
