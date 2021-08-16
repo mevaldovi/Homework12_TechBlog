@@ -16,7 +16,12 @@ app.set('view engine', 'handlebars');
 
 const sess = { //create a new session Object variable
     secret: 'Super secret secret',
-    cookie: {},
+    cookie: {
+        maxAge: 3600, //sets the time in milliseconds for when the cookie expires
+        httpOnly: true, //enforces that the cookie info only be stored
+        secure: false,
+        sameSite: "strict"
+    },
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
