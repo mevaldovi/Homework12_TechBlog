@@ -1,4 +1,6 @@
 <!-- For the homepage, the blog partial is used to render the existing blog data -->
+{{!-- This is the main home page where user can see the existing blogs, but cannot
+yet leave a comment until he or she logs in. --}}
 {{#if loggedIn}}
 <div>
   {{#each posts as |post|}}
@@ -13,6 +15,6 @@
   {{/each}}
 </div>
 {{else}}
-<a href="/login">You must log in first to view blogs!</a>
+<a href="/login">You must log in first to leave a comment!</a>
 {{/if}}
 <script src="../../Assets/addnewBlog.js"></script>
