@@ -15,3 +15,49 @@
 {{/if}}
 <script src="../../public/login.js"></script>
 <script src="../../public/logout.js"></script>
+
+<!-- TODO: This is the form for updating a dish. the user enters ther input here. It then goes to the Model file
+//According to MVC framework, what is this form responsible for? What isn't it responsible for? -->
+{{!-- it is responsible to RENDERING the updated data to for the user to see on their end.
+it is NOT responsible for any of the fancy back end route things. --}}
+<div class="edit-dish-container">
+  <h2>
+    Update Dish
+  </h2>
+  <form class="edit-dish-form">
+    <label for="dish_name">
+      Dish Name:
+    </label>
+    <br />
+    <textarea id="dish_name" name="dish_name" rows="2" cols="30">
+      {{dish_name}}
+    </textarea>
+    <br />
+    <label for="description">
+      Description:
+    </label>
+    <br />
+    <textarea id="description" name="description" rows="5" cols="30">
+      {{description}}
+    </textarea>
+    <br />
+    <label for="guest_name">
+      Guest Name:
+    </label>
+    <br />
+    <textarea id="guest_name" name="guest_name" rows="2" cols="30">
+      {{guest_name}}
+    </textarea>
+    <br />
+    <br />
+    <input type="checkbox" id="has_nuts" name="has_nuts" value="true" />
+    <label for="has_nuts">
+      Check box if this dish contains nuts
+    </label>
+    <br />
+    <button type="submit" value="Submit">
+      Submit
+    </button>
+  </form>
+</div>
+<script src="/js/edit-dish.js"></script>
