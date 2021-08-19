@@ -1,0 +1,46 @@
+  
+<header class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col p-0 m-0">
+            <h2 class="m-0">EDIT</h2>
+        </div>
+        <nav class="col p-0 m-0">
+            <ul>
+                <a href = "/" class="px-2">Home</a>
+                <a href = "/dashboard" class="px-2">Dashboard</a>
+                {{#if loggedIn}}
+                <a href = "/" id = "logout" class="px-2">Logout</a>
+                {{else}}
+                <a href = "/login" class="px-2">Login</a>
+                <a href = "/signup" class="px-2">Sign Up</a>
+                {{/if}}
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container mt-3" id = "edit">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="myCardHeaderText">Edit Old Post</h3>
+            </div>
+            <div class="card-body">
+                <form class='edit-form' data-id = "{{blogs.id}}">
+                    <div class="form-group">
+                        <label for="blog-title">Title</label>
+                        <input type="text" class="form-control" value = '{{blogs.title}}' id="blog-title" placeholder="Enter Title">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="content">Content</label>
+                        <input type="text" class="form-control" value = '{{blogs.text}}' id="content" placeholder="Enter Content">
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                    <button class="btn btn-danger mt-2" id = "delete">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src = '/js/editBlog.js'></script>

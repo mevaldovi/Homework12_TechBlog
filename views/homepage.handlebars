@@ -1,7 +1,27 @@
+<!-- For the homepage, the blog partial is used to render the existing blog data -->
+{{!-- This is the main home page where user can see the existing blogs, but cannot
+yet leave a comment until he or she logs in. --}}
+{{!-- {{#if loggedIn}}
+<div>
+  {{#each posts as |post|}}
+<div class="title-div">
+  <h1>{{title}}</h1>
+</div>
+<br>
+<br>
+<div class="description-div">
+  <h2>{{description}}</h2>
+</div>
+  {{/each}}
+</div>
+{{else}}
+<a href="/login">You must log in first to leave a comment!</a>
+{{/if}}
+<script src="../../Assets/addnewBlog.js"></script> --}}
 <header class="container-fluid">
     <div class="row align-items-center">
         <div class="col p-0 m-0">
-            <h2 class="m-0">DASHBOARD</h2>
+            <h2 class="m-0">HOME</h2>
         </div>
         <nav class="col p-0 m-0">
             <ul>
@@ -19,15 +39,6 @@
 </header>
 
 {{#each blogs as |blog|}}
-    {{> editBlog}}
+    {{> blogCard}}
 {{/each}}
 
-{{> newCard}}
-
-<div class = "main">
-    <div id = "newPost">
-    <button id = "myBtn">+ New Post</button>
-    </div>
-</div>
-
-<script src = "/js/newBlog.js"></script>
