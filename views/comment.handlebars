@@ -1,0 +1,54 @@
+  
+<header class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col p-0 m-0">
+            <h2 class="m-0">TECH BLOG</h2>
+        </div>
+        <nav class="col p-0 m-0">
+            <ul>
+                <a href = "/" class="px-2">Home</a>
+                <a href = "/dashboard" class="px-2">Dashboard</a>
+                {{#if loggedIn}}
+                <a href = "/" id = "logout" class="px-2">Logout</a>
+                {{else}}
+                <a href = "/login" class="px-2">Login</a>
+                <a href = "/signup" class="px-2">Sign Up</a>
+                {{/if}}
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header">
+                <h3 class = "myCardHeaderText">{{blogs.title}}</h3>
+                <h3 class = "myCardHeaderText" style = "float: right;">Created By: {{blogs.user.username}} at {{format_time blogs.createdAt}}</h3>
+            </div>
+            <div class="card-body">
+                {{blogs.text}}
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="container mt-3" id = "edit">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="myCardHeaderText">Comment</h3>
+        </div>
+        <div class="card-body">
+            <form class='comment-form' data-id = "{{blogs.id}}">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="blog-comment" placeholder="Enter Comment">
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{> comment blogs.comments}}
+
+<script src = "/js/comment.js"></script>
