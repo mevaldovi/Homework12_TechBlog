@@ -1,0 +1,13 @@
+<main>
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header">
+                <h3 class = "myCardHeaderText"><a href="/post/{{id}}">{{title}}</a></h3>
+                <h3 class = "myCardHeaderText" style = "float: right;">Created By: {{user.username}} at {{format_time createdAt}}</h3>
+            </div>
+            <div class="card-body">
+                {{text}}
+            </div>
+        </div>
+    </div>
+</main>
