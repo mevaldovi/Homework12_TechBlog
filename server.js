@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require("path");
 const session = require('express-session');
 const routes = require('./controllers');
 const exphbs = require('express-handlebars');
@@ -8,7 +9,9 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const hbs = exphbs.create({});
+const helpers = require("./utils/helper");
+
+const hbs = exphbs.create({ helpers });
 
 // Inform Express.js which template engine we're using
 app.engine('handlebars', hbs.engine);
@@ -17,7 +20,7 @@ app.set('view engine', 'handlebars');
 const sess = { //create a new session Object variable
     secret: 'Super secret secret',
     cookie: {
-        maxAge: 3600, //sets the time in milliseconds for when the cookie expires
+        maxAge: 864000000, //sets the time in milliseconds for when the cookie expires
         httpOnly: true, //enforces that the cookie info only be stored
         secure: false,
         sameSite: "strict"
