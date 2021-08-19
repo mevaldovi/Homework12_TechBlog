@@ -1,6 +1,6 @@
 :root {
-    --header-bg-color: #231010;
-    --main-text-color: #D9EAD3;
+    --header-bg-color: #0080ff;
+    --main-text-color: #e5e5e5;
 }
 
 body,
@@ -31,7 +31,7 @@ nav>ul>li {
 }
 
 .card {
-    border: 3px solid black;
+    border: 3px solid gray;
 }
 
 .card-header {
