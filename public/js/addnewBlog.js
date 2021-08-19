@@ -1,26 +1,15 @@
-async function editFormHandler(event) {
+async function newBlogHandler(event) {
     event.preventDefault();
-    const dish_name = document.querySelector('#dish_name').value;
-    const description = document.querySelector('#description').value;
-    const guest_name = document.querySelector('#guest_name').value;
 
-    // TODO: What will the value of has_nuts be if the box in the form is checked? 
-    // TODO: What do we call this kind of operator?
-    const has_nuts = document.querySelector('#has_nuts:checked') ? true : false;
-
-    // window.location gives us access to the URL. We then use the .split() method to access the number at the end of the URL and set that equal to id.
-    const id = window.location.toString().split('/')[
-        window.location.toString().split('/').length - 1
-    ];
+    const title = document.querySelector('#blog-title').value;
+    const blogContent = document.querySelector('#content').value;
 
     // TODO: What part of our application will handle this 'put' request?
-    const response = await fetch(`/api/dish/${id}`, {
-        method: 'PUT',
+    const response = await fetch('/api/blogs', {
+        method: 'POST',
         body: JSON.stringify({
-            dish_name,
-            description,
-            guest_name,
-            has_nuts,
+            title,
+            content
         }),
         headers: {
             'Content-Type': 'application/json',
@@ -29,10 +18,15 @@ async function editFormHandler(event) {
 
     // TODO: What happens if the response is ok?
     if (response.ok) {
-        document.location.replace(`/dish/${id}`);
+        document.location.replace("dashboard");
     } else {
-        alert('Failed to edit dish');
+        alert('Failed to add new blog post!');
     }
 }
 
-document.querySelector('.edit-dish-form').addEventListener('submit', editFormHandler);
+function hide() {
+    modal = document.querySelector("#new")
+    modal.classList.toggle("hidden");
+}
+document.getElementById("myBtn").addEventListener("click", hide);
+document.querySelector('.new-form').addEventListener("submit", newBlogHandler);
