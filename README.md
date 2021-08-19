@@ -1,7 +1,7 @@
 # Homework12_TechBlog
 
 # Description
-ahfkjlsdkf
+A blog site made in the CMS style where incoming and current software devs can make an account to create their own blog posts and leave a comment.
 
 # Table of Contents
 [Description](https://github.com/mevaldovi/Homework12_TechBlog#Description)
@@ -22,14 +22,14 @@ ahfkjlsdkf
 [Agnowledgments](https://github.com/mevaldovi/Homework12_TechBlog#Agknowledgments)
 
 # Installation
-asdfhkdjl
+[heroku.](heroku link goes here once i deploy it). 
+If the link does not work, you can just clone down this repo, install the node packages using the command "npm i" in your terminal, and then after installation type "node server.js/npm start" in the same terminal.
 # Usage
-asdkfhlkjd
+Simply open the application, create an account, make posts and/or leave a comment.
 # License
-a;skt;hjkl
+MIT License
 # Contact
-sjfadhfjksl
-askdhfksl
+Shoot me an [email:](mailto:mevaldovi@gmail.com)
 # Agknowledgments
 A special thanks to my classmate Jacob Guiro for letting me reference his code for the routes and steal over all his handlebars templates to use, as well as the css references, and some of the js code in the public folder.
 
