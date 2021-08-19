@@ -1,0 +1,64 @@
+:root {
+    --header-bg-color: #231010;
+    --main-text-color: #D9EAD3;
+}
+
+body,
+.card-body {
+    background-color: var(--main-text-color);
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--main-text-color);
+    height: 5vh;
+    width: 100%;
+}
+
+nav>ul {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+nav>ul>li {
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    border: 3px solid black;
+}
+
+.card-header {
+    background-color: var(--header-bg-color);
+}
+
+.myCardHeaderText {
+    color: var(--main-text-color);
+    display: inline-block;
+}
+
+.main {
+    text-align: center;
+}
+
+#newPost {
+    position: absolute;
+    width: 100%;
+    bottom: 15;
+}
+
+#myBtn {
+    background-color: var(--header-bg-color);
+    color: var(--main-text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 16px;
+    height: 7vh;
+    width: 7vw;
+}
