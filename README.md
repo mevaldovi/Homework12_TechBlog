@@ -5,10 +5,20 @@ ahfkjlsdkf
 
 # Table of Contents
 [Description](https://github.com/mevaldovi/Homework12_TechBlog#Description)
+
+
 [Installation](https://github.com/mevaldovi/Homework12_TechBlog#Installation)
+
+
 [Usage](https://github.com/mevaldovi/Homework12_TechBlog#Usage)
+
+
 [License](https://github.com/mevaldovi/Homework12_TechBlog#License)
+
+
 [Contact Info](https://github.com/mevaldovi/Homework12_TechBlog#Contact)
+
+
 [Agnowledgments](https://github.com/mevaldovi/Homework12_TechBlog#Agknowledgments)
 
 # Installation
