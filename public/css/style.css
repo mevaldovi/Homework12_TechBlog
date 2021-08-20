@@ -5,7 +5,7 @@
 
 body,
 .card-body {
-    background-color: var(--main-text-color);
+    background-color: #e3dac9;
 }
 
 header {

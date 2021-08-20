@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
         })
         .then((blogData) => {
             const blogs = blogData.map((blog) => blog.get({ plain: true }));
-            res.render('home', {
+            res.render('homepage', {
                 blogs,
                 loggedIn: req.session.loggedIn
             });
@@ -41,7 +41,7 @@ router.get('/post/:id', (req, res) => {
         .then((results) => {
             const blogs = results.get({ plain: true });
             console.log(blogs);
-            res.render('viewBlog', {
+            res.render('edBlog', {
                 blogs,
                 loggedIn: req.session.loggedIn,
             });
