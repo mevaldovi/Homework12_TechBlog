@@ -40,6 +40,8 @@ router.get('/post/:id', (req, res) => {
         })
         .then((results) => {
             const blogs = results.get({ plain: true });
+            // const comments = result.get({plain: true});
+            // console.log(comments);
             console.log(blogs);
             res.render('edBlog', {
                 blogs,
@@ -49,8 +51,45 @@ router.get('/post/:id', (req, res) => {
         .catch((err) => res.json(err))
 });
 
+router.get('/post/:id', (req, res) => {
+    Comment.findOne({
+            where: {
+                id: req.params.id
+            },
+
+            include: [{
+                    model: User,
+                    attributes: ['username'],
+                },
+                {
+                    model: Comment,
+                    attributes: ['id', 'content', 'blog_id', 'user_id', 'createdAt'],
+                    include: {
+                        model: User,
+                        attributes: ['username'],
+                    }
+                },
+            ]
+        })
+        .then((results) => {
+            const comments = results.get({ plain: true });
+            // const comments = result.get({plain: true});
+            // console.log(comments);
+            console.log(comments);
+            res.render('comment', {
+                comments,
+                loggedIn: req.session.loggedIn,
+            });
+        })
+        .catch((err) => res.json(err))
+});
+
+//am i also supposed to create a post route for login and signup?? How else am I going to 
+//redirect the user who signs up to the main home page?
 router.get('/login', (req, res) => {
-    res.render('login', {})
+    res.render('login', {
+
+    })
 });
 
 router.get('/signup', (req, res) => {
