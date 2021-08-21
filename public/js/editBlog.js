@@ -2,13 +2,13 @@ const editBlogHandler = async(event) => {
     event.preventDefault();
 
     const title = document.querySelector("#blog-title").value.trim();
-    const content = document.querySelector("#content").value.trim();
+    const text = document.querySelector("#content").value.trim();
     const id = document.querySelector(".edit-form").getAttribute('data-id').trim();
 
-    if (title && content) {
+    if (title && text) {
         const response = await fetch("/api/blogs", {
             method: 'PUT',
-            body: JSON.stringify({ id, title, content }),
+            body: JSON.stringify({ id, title, text }),
             headers: { 'Content-Type': 'application/json' },
         })
 

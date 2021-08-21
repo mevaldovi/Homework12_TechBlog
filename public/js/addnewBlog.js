@@ -2,14 +2,14 @@ async function newBlogHandler(event) {
     event.preventDefault();
 
     const title = document.querySelector('#blog-title').value;
-    const blogContent = document.querySelector('#content').value;
+    const text = document.querySelector('#content').value;
 
     // TODO: What part of our application will handle this 'put' request?
     const response = await fetch('/api/blogs', {
         method: 'POST',
         body: JSON.stringify({
             title,
-            blogContent
+            text
         }),
         headers: {
             'Content-Type': 'application/json',

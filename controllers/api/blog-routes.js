@@ -5,7 +5,7 @@ router.post('/', async(req, res) => {
     try {
         const dbUserData = await Blog.create({
             title: req.body.title,
-            text: req.body.content,
+            text: req.body.text,
             user_id: req.session.user_id
         });
         req.session.save(() => {
@@ -24,7 +24,7 @@ router.put("/", async(req, res) => {
         console.log(req.body);
         const dbUserData = await Blog.update({
             title: req.body.title,
-            text: req.body.content
+            text: req.body.text
         }, {
             where: {
                 id: req.body.id
