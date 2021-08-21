@@ -1,16 +1,16 @@
 [{
         "title": "HTML Fundamentals",
-        "content": "Very interesting!",
+        "text": "Very interesting!",
         "user_id": 1
     },
     {
         "title": "ON MVCs",
-        "content": "I had no idea, that's what it was!!!??",
+        "text": "I had no idea, that's what it was!!!??",
         "user_id": 3
     },
     {
         "title": "What is V8?!?",
-        "content": "that's crazy!!",
+        "text": "that's crazy!!",
         "user_id": 3
     }
 ]
