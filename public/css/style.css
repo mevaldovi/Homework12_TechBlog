@@ -57,16 +57,22 @@ nav>ul>li {
 #myBtn {
     background-color: var(--header-bg-color);
     color: var(--main-text-color);
-    font-size: 5px;
+    font-size: 12px;
     font-weight: bold;
-    border-radius: 16px;
-    height: 14px;
-    width: 14px;
+    border-radius: 24px;
+    height: 50px;
+    width: 50px;
 
 }
 
-@media screen and (max-width: 768px) {
-    .col-p-0-m-0 {
-        background-color: brown;
+@media screen and (max-width: 992px) {
+    .align-items-center {
+        background-color: #0B2632;
+    }
+    .px-2 {
+        color: white;
+    }
+    .body {
+        background-color: #252627;
     }
 }
