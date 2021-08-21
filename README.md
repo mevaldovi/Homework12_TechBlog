@@ -35,6 +35,7 @@ Simply open the application, create an account, make posts and/or leave a commen
 # License
 MIT License
 # Contact
+Github: [https://github.com/mevaldovi](https://github.com/mevaldovi)
 Shoot me an email:[mevaldovi@gmail.com](mailto:mevaldovi@gmail.com)
 # Agknowledgments
 A special thanks to my classmate Jacob Guiro for letting me reference his code for the routes and steal over all his handlebars templates to use, as well as the css references, and some of the js code in the public folder.
