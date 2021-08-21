@@ -40,6 +40,6 @@ app.use(express.urlencoded({ extended: true })); //parse the urlencoded data wit
 
 app.use(routes); //use the routes
 
-sequelize.sync({ force: false }).then(() => { //tells sequelize to become sunchronous and to NOT delete existing tables
+sequelize.sync({ force: false, alter:true}).then(() => { //tells sequelize to become sunchronous and to NOT delete existing tables
     app.listen(PORT, () => console.log('Now listening'));
 });
