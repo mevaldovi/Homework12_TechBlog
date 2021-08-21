@@ -13,7 +13,7 @@ const helpers = require("./utils/helper");
 
 const hbs = exphbs.create({ helpers });
 //use public folder
-app.use(express.static(__dirname, "/public/"));
+app.use(express.static(path.join(__dirname, "public")));
 // Inform Express.js which template engine we're using
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
