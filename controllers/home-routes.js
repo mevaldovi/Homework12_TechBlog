@@ -18,21 +18,21 @@ router.get('/', (req, res) => {
         })
 });
 
-router.get('/', (req, res) => {
-    Comment.findAll({
-            include: {
-                model: User,
-                attributes: ['username'],
-            },
-        })
-        .then((commentData) => {
-            const comments = commentData.map((comment) => comment.get({ plain: true }));
-            res.render('comment', {
-                comments,
-                loggedIn: req.session.loggedIn
-            });
-        })
-});
+// router.get('/', (req, res) => {
+//     Comment.findAll({
+//             include: {
+//                 model: User,
+//                 attributes: ['username'],
+//             },
+//         })
+//         .then((commentData) => {
+//             const comments = commentData.map((comment) => comment.get({ plain: true }));
+//             res.render('comment', {
+//                 comments,
+//                 loggedIn: req.session.loggedIn
+//             });
+//         })
+// });
 router.get('/post/:id', (req, res) => {
     Blog.findOne({
             where: {

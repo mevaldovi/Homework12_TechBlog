@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Blog, User, Comment } = require('../models/');
+const { Blog, User } = require('../models/');
 // const withAuth = require('../utils/auth');
 
 router.get('/', async(req, res) => {
@@ -11,10 +11,6 @@ router.get('/', async(req, res) => {
             model: User,
             attributes: ['username'],
         },
-        {
-            model: Comment,
-            attributes: ["content"],
-        }
     }).catch((err) => {
         res.json(err);
     });
