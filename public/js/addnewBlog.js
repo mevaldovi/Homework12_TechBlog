@@ -9,7 +9,7 @@ async function newBlogHandler(event) {
         method: 'POST',
         body: JSON.stringify({
             title,
-            content
+            blogContent
         }),
         headers: {
             'Content-Type': 'application/json',
