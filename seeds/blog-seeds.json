@@ -1,16 +1,16 @@
 [{
         "title": "HTML Fundamentals",
-        "text": "HTML stands for HyperText Markup Language and is used to structure a web page and its content",
+        "content": "Very interesting!",
         "user_id": 1
     },
     {
         "title": "ON MVCs",
-        "text": "stands for Model, View, Controller. Refers to the architecture running within a server to process and render data.",
+        "content": "I had no idea, that's what it was!!!??",
         "user_id": 3
     },
     {
         "title": "What is V8?!?",
-        "text": "V8 refers to the open-spurce javascript engine developed for Chrome.",
+        "content": "that's crazy!!",
         "user_id": 3
     }
 ]
