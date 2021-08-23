@@ -1,16 +1,17 @@
 [{
-        "title": "HTML Fundamentals",
-        "text": "Very interesting!",
+        "title": "What does HTML stand for??",
+        "text": "HTML stands for Hyper Text Markup Language",
         "user_id": 1
     },
     {
-        "title": "ON MVCs",
-        "text": "I had no idea, that's what it was!!!??",
+        "title": "Having trouble figuring out what MVCs stand for",
+        "text": "I THINK it's Short for 'Model View Controller but I'm not sure?!?",
         "user_id": 3
     },
     {
         "title": "What is V8?!?",
-        "text": "that's crazy!!",
-        "user_id": 3
+        "text": "Can someone please tell me what this is and what it does??",
+        "user_id": 2
     }
 ]
+

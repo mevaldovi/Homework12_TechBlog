@@ -5,8 +5,8 @@ const { Comment } = require('../../models');
 //creating a new comment in the database
 router.post('/', async(req, res) => {
     try {
-        const dbUserData = await Comment.create({
-            text: req.body.text,
+        const commentData = await Comment.create({
+            content: req.body.content,
             user_id: req.session.user_id,
             blog_id: req.body.blog_id
         });
@@ -14,7 +14,7 @@ router.post('/', async(req, res) => {
         req.session.save(() => {
             req.session.loggedIn = true;
 
-            res.status(200).json(dbUserData)
+            res.status(200).json(commentData)
         })
         //error handler
     } catch (err) {

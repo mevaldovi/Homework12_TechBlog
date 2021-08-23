@@ -7,7 +7,7 @@ router.post('/', async(req, res) => {
     try {
         const dbUserData = await Blog.create({
             title: req.body.title,
-            text: req.body.text,
+            text: req.body.content,
             user_id: req.session.user_id
         });
         //save the blog data in JSON notation as long as user is logged in
@@ -27,7 +27,7 @@ router.put("/", async(req, res) => {
         console.log(req.body);
         const dbUserData = await Blog.update({
             title: req.body.title,
-            text: req.body.text
+            text: req.body.content
         }, {
             //update in the database as long as its id matches the blog post id in the URL
             where: {
