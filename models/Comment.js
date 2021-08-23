@@ -20,7 +20,7 @@ Comment.init({
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-            model: 'Blog',
+            model: 'blog',
             key: 'id'
         }
     },
@@ -29,16 +29,16 @@ Comment.init({
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-            model: 'User',
+            model: 'user',
             key: 'id'
         }
     }
 }, {
     sequelize,
-    // timestamps: true,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Comment',
+    modelName: 'comment',
 })
 
 module.exports = Comment;
