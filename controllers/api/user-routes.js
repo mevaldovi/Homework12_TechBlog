@@ -1,6 +1,9 @@
 //import express router and User Model
+const express = require("express");
 const router = require('express').Router();
 const { User } = require('../../models');
+const bcrypt = require("bcrypt");
+
 //create a new account on the user's side
 router.post('/', async(req, res) => {
     try {
