@@ -54,7 +54,7 @@ router.get('/post/:id', (req, res) => {
     });
     
     router.get('/signup',  (req, res) => {
-        res.render('signup', {
+        res.render('signUp', {
             loggedIn: req.session.loggedIn
         });
     });
