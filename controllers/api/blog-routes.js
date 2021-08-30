@@ -21,22 +21,6 @@ router.post('/', async(req, res) => {
         res.status(500).json(err);
     }
 });
-//get existing comments
-// router.get("/", async(req, res) => {
-//     try {
-//         console.log(req.body);
-//         const commentData = await Comment.get({
-//             text: req.body.content,
-//             user_id: req.session.user_id
-//         });
-//     req.session.save(() => {
-//         req.session.loggedIn = true,
-//             res.status(200).json(commentData);
-//     })
-// } catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-// };
 
 //updating a blog in the database
 router.put("/", async(req, res) => {
