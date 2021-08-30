@@ -6,7 +6,8 @@ let sequelize;
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
-  sequelize = new Sequelize(
+  //insert JAWSDB name, host, username and password info via Heroku JAWSDB extension
+  sequelize = new Sequelize( 
     "mm75cm7xc972el9e",
     "dq2elq1hf2ur6az4",
     "t6fxsb1odvivhva2",

@@ -1,5 +1,5 @@
 # Homework12_TechBlog
-
+[Tech Blog](Techblog_Heroku.PNG)
 # Description
 A blog site made in the CMS style where incoming and current software devs can make an account to create their own blog posts and leave a comment.
 
