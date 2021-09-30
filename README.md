@@ -1,5 +1,6 @@
 # Homework12_TechBlog
-[Tech Blog](Techblog_Heroku.PNG)
+<img width="907" alt="Techblog_Heroku" src="https://user-images.githubusercontent.com/83307023/135497228-47786522-0141-4961-ac97-7fca720d791c.PNG">
+
 # Description
 A blog site made in the CMS style where incoming and current software devs can make an account to create their own blog posts and leave a comment.
 
@@ -28,7 +29,7 @@ Technologies used include but not limited to HTML, CSS & Javascript, Express/Han
 [Agnowledgments](https://github.com/mevaldovi/Homework12_TechBlog#Agknowledgments)
 
 # Installation
-[Heroku.](https://tech-blog-mv.herokuapp.com/). 
+[Deployed app](https://tech-blog-mv.herokuapp.com/). 
 If the link does not work, you can just clone down this repo, install the node packages using the command "npm i" in your terminal from the package.json, and then after installation type "npm start" in the same terminal.
 # Usage
 Simply open the application, create an account, make posts and/or leave a comment.
