@@ -1,5 +1,5 @@
 # Homework12_TechBlog
-[Deployed App](https://tech-blog-mv.herokuapp.com/).
+[Deployed App](https://tech-blog-mv.herokuapp.com/)
 
 <img width="907" alt="Techblog_Heroku" src="https://user-images.githubusercontent.com/83307023/135497228-47786522-0141-4961-ac97-7fca720d791c.PNG">
 
