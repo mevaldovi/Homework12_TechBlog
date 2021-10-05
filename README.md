@@ -1,4 +1,4 @@
-# Homework12_TechBlog
+# Tech-Blog
 [Deployed App](https://tech-blog-mv.herokuapp.com/)
 
 <img width="907" alt="Techblog_Heroku" src="https://user-images.githubusercontent.com/83307023/135497228-47786522-0141-4961-ac97-7fca720d791c.PNG">
@@ -10,25 +10,25 @@ A blog site made in the CMS style where incoming and current software devs can m
 Technologies used include but not limited to HTML, CSS & Javascript, Express/Handlebars for main templating engine, bcrypt for user's credentials security, mySQL & Sequelize for database, and Heroku for hosting application's deployment.
 
 # Table of Contents
-[Description](https://github.com/mevaldovi/Homework12_TechBlog#Description)
+[Description](https://github.com/mevaldovi/Tech-Blog#Description)
 
 
-[Technology](https://github.com/mevaldovi/Homework12_TechBlog#Technology)
+[Technology](https://github.com/mevaldovi/Tech-Blog#Technology)
 
 
-[Installation](https://github.com/mevaldovi/Homework12_TechBlog#Installation)
+[Installation](https://github.com/mevaldovi/Tech-Blog#Installation)
 
 
-[Usage](https://github.com/mevaldovi/Homework12_TechBlog#Usage)
+[Usage](https://github.com/mevaldovi/Tech-Blog#Usage)
 
 
-[License](https://github.com/mevaldovi/Homework12_TechBlog#License)
+[License](https://github.com/mevaldovi/Tech-Blog#License)
 
 
-[Contact Info](https://github.com/mevaldovi/Homework12_TechBlog#Contact)
+[Contact Info](https://github.com/mevaldovi/Tech-Blog#Contact)
 
 
-[Agnowledgments](https://github.com/mevaldovi/Homework12_TechBlog#Agknowledgments)
+[Agnowledgments](https://github.com/mevaldovi/Tech-Blog#Agknowledgments)
 
 # Installation
  
