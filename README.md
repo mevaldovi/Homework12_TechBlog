@@ -1,5 +1,5 @@
 # Tech-Blog
-[Deployed App](https://tech-blog-mv.herokuapp.com/)
+Deployed app: [https://tech-blog-mv.herokuapp.com](https://tech-blog-mv.herokuapp.com)
 
 <img width="907" alt="Techblog_Heroku" src="https://user-images.githubusercontent.com/83307023/135497228-47786522-0141-4961-ac97-7fca720d791c.PNG">
 
@@ -31,6 +31,26 @@ Technologies used include but not limited to HTML, CSS & Javascript, Express/Han
 [Agnowledgments](https://github.com/mevaldovi/Tech-Blog#Agknowledgments)
 
 # Installation
+
+- Clone this repo 
+
+- npm install
+
+- open terminal
+
+- mysql -u root -p
+
+- enter pw if you have one
+
+- source db/schema.sql
+
+- quit
+
+- npm run seed
+
+- npm start
+
+- visit https://localhost:3001 to view in browser.
  
 If the link does not work, you can just clone down this repo, install the node packages using the command "npm i" in your terminal from the package.json, and then after installation type "npm start" in the same terminal.
 # Usage
