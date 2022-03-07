@@ -32,6 +32,8 @@ Technologies used include but not limited to HTML, CSS & Javascript, Express/Han
 
 # Installation
 
+Bold text indicates specific terminal commands; italic text indicates steps to take
+
 - _Clone this repo_ 
 
 - **npm install**
@@ -40,7 +42,7 @@ Technologies used include but not limited to HTML, CSS & Javascript, Express/Han
 
 - **mysql -u root -p**
 
-- _enter pw if you have one_
+- _enter password if you have one_
 
 - **source db/schema.sql**
 
@@ -50,7 +52,7 @@ Technologies used include but not limited to HTML, CSS & Javascript, Express/Han
 
 - **npm start**
 
-- visit https://localhost:3001 to view in browser.
+- _visit https://localhost:3001 to view in browser_
  
 
 # Usage
