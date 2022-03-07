@@ -52,7 +52,7 @@ Technologies used include but not limited to HTML, CSS & Javascript, Express/Han
 
 - visit https://localhost:3001 to view in browser.
  
-If the link does not work, you can just clone down this repo, install the node packages using the command "npm i" in your terminal from the package.json, and then after installation type "npm start" in the same terminal.
+
 # Usage
 Simply open the application, create an account, make posts and/or leave a comment.
 # License
