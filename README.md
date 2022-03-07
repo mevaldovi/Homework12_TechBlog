@@ -32,7 +32,7 @@ Technologies used include but not limited to HTML, CSS & Javascript, Express/Han
 
 # Installation
 
-- **Clone this repo** 
+- _Clone this repo_ 
 
 - **npm install**
 
