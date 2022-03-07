@@ -32,23 +32,23 @@ Technologies used include but not limited to HTML, CSS & Javascript, Express/Han
 
 # Installation
 
-- Clone this repo 
+- **Clone this repo** 
 
-- npm install
+- **npm install**
 
-- open terminal
+- **open terminal**
 
-- mysql -u root -p
+- **mysql -u root -p**
 
-- enter pw if you have one
+- _enter pw if you have one_
 
-- source db/schema.sql
+- **source db/schema.sql**
 
-- quit
+- **quit**
 
-- npm run seed
+- **npm run seed**
 
-- npm start
+- **npm start**
 
 - visit https://localhost:3001 to view in browser.
  
