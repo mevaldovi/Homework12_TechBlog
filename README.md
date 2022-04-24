@@ -7,16 +7,13 @@ Deployed app: [https://tech-blog-mv.herokuapp.com](https://tech-blog-mv.herokuap
 A blog site for users to create and view ech-related content.
 
 # Technology
-[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
-[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
-[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
-[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
-[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
-[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
-[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
-[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
-
-Technologies used include but not limited to HTML, CSS & Javascript, Express/Handlebars for main templating engine, bcrypt for user's credentials security, mySQL & Sequelize for database, and Heroku for hosting application's deployment.
+[<img alt="medium" src="https://img.shields.io/badge/Handlebars.js-f0772b?style=for-the-badge&logo=handlebarsdotjs&logoColor=black" />](https://handlebarsjs.com)
+[<img alt="medium" src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />](https://expressjs.com)
+[<img alt="medium" src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />](https://docs.npmjs.com)
+[<img alt="medium" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />](https://dev.mysql.com/doc)
+[<img alt="medium" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[<img alt="medium" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />](https://getbootstrap.com/docs/4.1/getting-started/introduction)
+[<img alt="medium" src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />](https://devcenter.heroku.com/categories/reference)
 
 # Table of Contents
 [Description](https://github.com/mevaldovi/Tech-Blog#Description)
