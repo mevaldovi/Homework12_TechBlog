@@ -4,9 +4,18 @@ Deployed app: [https://tech-blog-mv.herokuapp.com](https://tech-blog-mv.herokuap
 <img width="907" alt="Techblog_Heroku" src="https://user-images.githubusercontent.com/83307023/135497228-47786522-0141-4961-ac97-7fca720d791c.PNG">
 
 # Description
-A blog site made in the CMS style where incoming and current software devs can make an account to create their own blog posts and leave a comment.
+A blog site for users to create and view ech-related content.
 
 # Technology
+[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
+[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
+[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
+[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
+[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
+[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
+[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
+[<img alt="medium" src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />](https://docs.python.org/)
+
 Technologies used include but not limited to HTML, CSS & Javascript, Express/Handlebars for main templating engine, bcrypt for user's credentials security, mySQL & Sequelize for database, and Heroku for hosting application's deployment.
 
 # Table of Contents
@@ -32,25 +41,29 @@ Technologies used include but not limited to HTML, CSS & Javascript, Express/Han
 
 # Installation
 
-Bold text indicates specific terminal commands; italic text indicates steps to take
-
 - _Clone this repo_ 
 
-- **npm install**
+- `npm install`
 
-- **open terminal**
+- _open terminal_
 
-- **mysql -u root -p**
+- `mysql -u root -p`
 
-- _enter password if you have one_
+- _enter mysql password if you have one_
 
-- **source db/schema.sql**
+- `source db/schema.sql`
 
-- **quit**
+- `quit`
 
-- **npm run seed**
+- `npm run seed`
 
-- **npm start**
+- `cd server.js`
+
+- `node server.js`
+
+- `cd ..`
+
+- `npm start`
 
 - _visit https://localhost:3001 to view in browser_
  
@@ -61,6 +74,8 @@ Simply open the application, create an account, make posts and/or leave a commen
 MIT License
 # Contact
 Github: [https://github.com/mevaldovi](https://github.com/mevaldovi)
+
+LinkedIn : [https://www.linkedin.com/in/marie-valdovinos-a616b21b1/](https://www.linkedin.com/in/marie-valdovinos-a616b21b1)
 
 
 Shoot me an email:[mevaldovi@gmail.com](mailto:mevaldovi@gmail.com)
