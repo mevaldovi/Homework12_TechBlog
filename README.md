@@ -58,10 +58,6 @@ A blog site for users to create and view ech-related content.
 
 - `node server.js`
 
-- `cd ..`
-
-- `npm start`
-
 - _visit https://localhost:3001 to view in browser_
  
 
